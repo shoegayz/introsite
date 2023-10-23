@@ -8,7 +8,7 @@ function createSparkle(){
     sparkle.style.left = `${Math.random() * (window.innerWidth - 15)}px`
     sparkle.style.top = `${Math.random() * (window.innerHeight - 15)}px`
     //hueshift! hue, saturation, lightness!
-    sparkle.style.backgroundColor = `hsl(${Math.random() * 360}deg, 100%, 70%)`
+    sparkle.style.backgroundColor = `hsl(275deg, 80%, ${40+Math.random()*50+Math.random()}%)`
     //adding it to <body>!
     document.body.appendChild(sparkle)
 
