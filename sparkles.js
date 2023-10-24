@@ -1,3 +1,5 @@
+const sparklesWrapper = document.getElementById('sparkles-wrapper')
+
 function animateSparkle(sparkle) {
     //get the coordinates of the sparkle!
     const boundingClientRect = sparkle.getBoundingClientRect()
@@ -44,7 +46,7 @@ function createSparkle() {
     //hueshift! hue, saturation, lightness!
     sparkle.style.backgroundColor = `hsl(275deg, 80%, ${40+Math.random()*50+Math.random()}%)`
     //adding it to <body>!
-    document.body.appendChild(sparkle)
+    sparklesWrapper.appendChild(sparkle)
     animateSparkle(sparkle)
     sparkle.animate([
         {
